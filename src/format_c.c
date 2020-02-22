@@ -6,7 +6,7 @@
 /*   By: tmyrcell <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/21 11:36:33 by tmyrcell          #+#    #+#             */
-/*   Updated: 2020/02/22 17:00:08 by jczech           ###   ########.fr       */
+/*   Updated: 2020/02/22 19:35:13 by jczech           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ char		*format_c(t_flag *flag, va_list ap)
 	char *tmp;
 	char chr;
 
+	tmp = NULL;
 	chr = (char)va_arg(ap, int);
 	tmp = mem_for_c(flag, tmp);
 	if (flag->flag_zero == 1 && flag->flag_minus == 0)
